@@ -47,7 +47,7 @@ def insert():
     conn.close()
     return "Basketball table populated!"
 
-@app.route('/db_select_all')
+@app.route('/db_select')
 def select_all():
     conn = psycopg2.connect("postgresql://tiffsdb_user:m6bgJHymMgWBsEaFCzNWnwwCtd935qMS@dpg-cvlcrrq4d50c73e5akl0-a/tiffsdb")
     cur = conn.cursor()
